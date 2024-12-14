@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import UserLoggedOut from '../assets/user-loged-out.svg';
-import NavUSDT from '../assets/nav-usdt.svg';
-import ConnectWallet from '../assets/connect-wallet.svg';
-import MyProfile from '../assets/my-profile.svg';
+import  { ReactComponent as UserLoggedOut}  from '../assets/user-loged-out.svg';
+import  { ReactComponent as NavUSDT} from '../assets/nav-usdt.svg';
+import { ReactComponent as  ConnectWallet} from '../assets/connect-wallet.svg';
+import { ReactComponent as  MyProfile}  from '../assets/my-profile.svg';
+import  { ReactComponent as  Referrals } from '../assets/referrals.svg';
 import Logout from '../assets/logout.svg';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
@@ -78,7 +79,9 @@ const Navbar = () => {
           <li className="lg:flex hidden text-[white] text-[16px] ">
             <Link to={'/how-it-works'}>HOW IT WORK'S?</Link>
           </li>
-         
+          <li className="lg:flex hidden text-[white] text-[16px] ">
+            <Link to={'/referrals'}>REFERRALS</Link>
+          </li>
           <li className="lg:flex hidden text-[white] text-[16px] ">
             <Link to={'/activity'}>ACTIVITY</Link>
           </li>
@@ -227,7 +230,7 @@ const Navbar = () => {
                   borderBottom: '1px solid white',
                 }}
               >
-             
+                <img className="sm:w-[25px]" src={Referrals} alt="" />
                 <span className="text-center">Referrals</span>
               </li>
             </Link>
