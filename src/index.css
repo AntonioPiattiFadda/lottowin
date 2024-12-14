@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Impact';
+  src: url('../assets/fonts/Impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    font-family: 'Impact', sans-serif;
+}
