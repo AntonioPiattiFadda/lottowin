@@ -227,7 +227,7 @@ const Navbar = () => {
                   borderBottom: '1px solid white',
                 }}
               >
-                <img className="sm:w-[25px]" src={Referrals} alt="" />
+             
                 <span className="text-center">Referrals</span>
               </li>
             </Link>
